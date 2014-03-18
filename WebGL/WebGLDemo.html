@@ -50,8 +50,6 @@
 
                                 var jsonLoader = new THREE.JSONLoader();
 
-				var redPhongMaterial = new THREE.MeshPhongMaterial({color: 0xCC0000});
-
                                 jsonLoader.load( "models/teapot.js", function( geometry ) {
                         var teapot = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial() );
                                 teapot.materials=redPhongMaterial;
